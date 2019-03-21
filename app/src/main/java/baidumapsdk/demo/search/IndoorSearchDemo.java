@@ -18,6 +18,7 @@ import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.overlayutil.IndoorPoiOverlay;
 import com.baidu.mapapi.search.poi.OnGetPoiSearchResultListener;
 import com.baidu.mapapi.search.poi.PoiDetailResult;
+import com.baidu.mapapi.search.poi.PoiDetailSearchResult;
 import com.baidu.mapapi.search.poi.PoiIndoorInfo;
 import com.baidu.mapapi.search.poi.PoiIndoorOption;
 import com.baidu.mapapi.search.poi.PoiIndoorResult;
@@ -102,6 +103,11 @@ public class IndoorSearchDemo extends Activity implements OnGetPoiSearchResultLi
 
     @Override
     public void onGetPoiDetailResult(PoiDetailResult result) {
+
+    }
+
+    @Override
+    public void onGetPoiDetailResult(PoiDetailSearchResult poiDetailSearchResult) {
 
     }
 

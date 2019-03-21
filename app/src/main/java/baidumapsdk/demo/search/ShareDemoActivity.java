@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-import baidumapsdk.demo.R;
+
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
 import com.baidu.mapapi.map.MapStatus;
@@ -27,6 +27,7 @@ import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
 import com.baidu.mapapi.search.poi.OnGetPoiSearchResultListener;
 import com.baidu.mapapi.search.poi.PoiCitySearchOption;
 import com.baidu.mapapi.search.poi.PoiDetailResult;
+import com.baidu.mapapi.search.poi.PoiDetailSearchResult;
 import com.baidu.mapapi.search.poi.PoiIndoorResult;
 import com.baidu.mapapi.search.poi.PoiResult;
 import com.baidu.mapapi.search.poi.PoiSearch;
@@ -37,6 +38,8 @@ import com.baidu.mapapi.search.share.PoiDetailShareURLOption;
 import com.baidu.mapapi.search.share.RouteShareURLOption;
 import com.baidu.mapapi.search.share.ShareUrlResult;
 import com.baidu.mapapi.search.share.ShareUrlSearch;
+
+import baidumapsdk.demo.R;
 
 import static com.baidu.mapapi.search.share.RouteShareURLOption.RouteShareMode;
 
@@ -137,6 +140,11 @@ public class ShareDemoActivity extends Activity implements
 
     @Override
     public void onGetPoiDetailResult(PoiDetailResult result) {
+
+    }
+
+    @Override
+    public void onGetPoiDetailResult(PoiDetailSearchResult poiDetailSearchResult) {
 
     }
 

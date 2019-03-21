@@ -22,13 +22,13 @@ import android.widget.TextView;
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.VersionInfo;
 
-import baidumapsdk.demo.map.LocationDemo;
-import baidumapsdk.demo.map.LayersDemo;
-import baidumapsdk.demo.map.HeatMapDemo;
 import baidumapsdk.demo.map.BaseMapDemo;
 import baidumapsdk.demo.map.FavoriteDemo;
-import baidumapsdk.demo.map.IndoorMapDemo;
 import baidumapsdk.demo.map.GeometryDemo;
+import baidumapsdk.demo.map.HeatMapDemo;
+import baidumapsdk.demo.map.IndoorMapDemo;
+import baidumapsdk.demo.map.LayersDemo;
+import baidumapsdk.demo.map.LocationDemo;
 import baidumapsdk.demo.map.MapControlDemo;
 import baidumapsdk.demo.map.MapFragmentDemo;
 import baidumapsdk.demo.map.MarkerClusterDemo;
@@ -40,15 +40,13 @@ import baidumapsdk.demo.map.TextureMapViewDemo;
 import baidumapsdk.demo.map.TileOverlayDemo;
 import baidumapsdk.demo.map.TrackShowDemo;
 import baidumapsdk.demo.map.UISettingDemo;
-import baidumapsdk.demo.search.RoutePlanDemo;
 import baidumapsdk.demo.search.BusLineSearchDemo;
 import baidumapsdk.demo.search.DistrictSearchDemo;
 import baidumapsdk.demo.search.GeoCoderDemo;
-import baidumapsdk.demo.search.PoiSearchDemo;
-import baidumapsdk.demo.search.ShareDemo;
 import baidumapsdk.demo.search.IndoorSearchDemo;
-import baidumapsdk.demo.cloud.CloudSearchDemo;
-import baidumapsdk.demo.radar.RadarDemo;
+import baidumapsdk.demo.search.PoiSearchDemo;
+import baidumapsdk.demo.search.RoutePlanDemo;
+import baidumapsdk.demo.search.ShareDemo;
 import baidumapsdk.demo.util.OpenBaiduMap;
 
 
@@ -149,14 +147,10 @@ public class BMapApiDemoMain extends Activity {
                     ShareDemo.class),
             new DemoInfo(R.string.demo_title_offline,
                     R.string.demo_desc_offline, OfflineDemo.class),
-            new DemoInfo(R.string.demo_title_radar,
-                    R.string.demo_desc_radar, RadarDemo.class),
             new DemoInfo(R.string.demo_title_open_baidumap, R.string.demo_desc_open_baidumap,
                     OpenBaiduMap.class),
             new DemoInfo(R.string.demo_title_favorite,
                     R.string.demo_desc_favorite, FavoriteDemo.class),
-            new DemoInfo(R.string.demo_title_cloud, R.string.demo_desc_cloud,
-                    CloudSearchDemo.class),
             new DemoInfo(R.string.demo_title_opengl, R.string.demo_desc_opengl,
                     OpenglDemo.class),
             new DemoInfo(R.string.demo_title_cluster, R.string.demo_desc_cluster, MarkerClusterDemo.class),

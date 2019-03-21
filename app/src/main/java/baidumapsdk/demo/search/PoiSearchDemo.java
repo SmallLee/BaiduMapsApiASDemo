@@ -33,6 +33,7 @@ import com.baidu.mapapi.search.poi.PoiBoundSearchOption;
 import com.baidu.mapapi.search.poi.PoiCitySearchOption;
 import com.baidu.mapapi.search.poi.PoiDetailResult;
 import com.baidu.mapapi.search.poi.PoiDetailSearchOption;
+import com.baidu.mapapi.search.poi.PoiDetailSearchResult;
 import com.baidu.mapapi.search.poi.PoiIndoorResult;
 import com.baidu.mapapi.search.poi.PoiNearbySearchOption;
 import com.baidu.mapapi.search.poi.PoiResult;
@@ -164,6 +165,7 @@ public class PoiSearchDemo extends FragmentActivity implements
         String citystr = editCity.getText().toString();
         String keystr = keyWorldsView.getText().toString();
         mPoiSearch.searchInCity((new PoiCitySearchOption())
+                .cityLimit(false)
                 .city(citystr).keyword(keystr).pageNum(loadIndex));
     }
 
@@ -255,6 +257,11 @@ public class PoiSearchDemo extends FragmentActivity implements
             Toast.makeText(PoiSearchDemo.this, result.getName() + ": " + result.getAddress(), Toast.LENGTH_SHORT)
                     .show();
         }
+    }
+
+    @Override
+    public void onGetPoiDetailResult(PoiDetailSearchResult poiDetailSearchResult) {
+
     }
 
     @Override
